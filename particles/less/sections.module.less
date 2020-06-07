@@ -3,22 +3,32 @@
   h1 {
     margin: 0.1rem 0;
     font-size: 2.2rem;
+    @media (max-width: 575px) {
+      font-size: 1.9rem;
+    }
   }
   p {
     font-size: 1.4rem;
     margin: 0 0 1.7rem 0;
+    @media (max-width: 575px) {
+      font-size: 0.9rem;
+      margin: 0 0 1.4rem 0;
+    }
   }
   a:nth-of-type(n+2) {
     margin-left: 15px;
   }
   .discord {
     width: 45px;
+    @media (max-width: 575px) {
+      width: 35px;
+    }
   }
   .github {
-    width: 53px;
+    width: 43px;
   }
   .telegram {
-    width: 51px;
+    width: 41px;
   }
 }
 

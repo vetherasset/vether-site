@@ -5,9 +5,27 @@ header {
   display: flex;
   flex-direction: row;
   padding: @headerDimensions;
-  .logotype {
-    width:148px;
-    height:60px;
-    cursor: pointer;
+  @media (max-width: 575px) {
+    flex-wrap: wrap;
+  }
+  .brand {
+    justify-content: flex-start;
+    @media (max-width: 575px) {
+      justify-content: center;
+    }
+    .logotype {
+      width:148px;
+      height:60px;
+      cursor: pointer;
+    }
+  }
+  .action {
+    justify-content: flex-end;
+    align-content: center;
+    @media (max-width: 575px) {
+      a {
+        width: 100%;
+      }
+    }
   }
 }
