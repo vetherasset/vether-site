@@ -18,17 +18,22 @@ const Footer: React.FunctionComponent = () => (
                     </li>
                     <li>
                         <Link href='https://github.com/vetherasset/vether-contracts'>
-                            Smart Contract
+                            <a>Smart Contract</a>
                         </Link>
                     </li>
                     <li>
                         <Link href='https://github.com/vetherasset/vether-miner'>
-                            Mining client
+                            <a>Mining client</a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href='https://etherscan.io/address/0x0111011001100001011011000111010101100101'>
+                            <a>Burnt Ether</a>
                         </Link>
                     </li>
                     <li>
                         <Link href='https://github.com/vetherasset/vether-branding'>
-                            Branding
+                            <a>Branding</a>
                         </Link>
                     </li>
                 </ul>
