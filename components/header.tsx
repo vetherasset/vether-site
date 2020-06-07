@@ -23,7 +23,7 @@ const Header: React.FunctionComponent = () => (
             ${utilities.alignCenter}
         `}>
             <Link href="https://vetherasset.org/">
-                <a className={button.menubar}>Get Started</a>
+                <a className={button.menubar}>Open Dapp</a>
             </Link>
         </div>
     </header>

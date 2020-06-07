@@ -2,7 +2,7 @@ import * as React from "react";
 
 import Head from 'next/head'
 import Header from '../components/header'
-import Footer from '../components/footer'
+// import Footer from '../components/footer'
 
 import core from '../particles/less/core.module.less';
 import grid from '../particles/less/grid.module.less';
@@ -13,7 +13,7 @@ const Basic: React.FunctionComponent = ({children})  => (
         <Head>
             <meta charSet="utf-8" />
             <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width" />
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" href="../public/ico/favicon.ico" />
         </Head>
 
         <Header/>
@@ -22,7 +22,7 @@ const Basic: React.FunctionComponent = ({children})  => (
             {children}
         </main>
 
-        <Footer/>
+        {/*<Footer/>*/}
     </div>
 )
 
