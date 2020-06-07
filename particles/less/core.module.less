@@ -15,7 +15,6 @@ body {
 
 .viewport {
   min-height: 100vh;
-  padding: 0 3.25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,7 +25,7 @@ main {
   width: 100%;
   height: auto;
   background: transparent;
-  padding: 0;
+  padding: 0 @blockSides @verticalSpacing @blockSides;
   flex: 1;
   display: flex;
   flex-direction: column;

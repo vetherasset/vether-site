@@ -1,5 +1,18 @@
 @import "defaults.less";
 
+a:visited {
+  color: @text;
+}
+
+a:hover {
+  color: lighten(@yellow, 16%);
+}
+
+a:active {
+  color: darken(@yellow, 1%);
+}
+
+
 a.menubar {
   display: flex;
   max-height: 2.7rem;
@@ -13,9 +26,11 @@ a.menubar {
 }
 
 a.menubar:hover {
+  color: #fff;
   background-color: lighten(@yellow, 6%);
 }
 
 a.menubar:active {
+  color: #fff;
   background-color: darken(@yellow, 3%);
 }

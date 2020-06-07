@@ -1,11 +1,11 @@
-import * as React from "react";
+import * as React from "react"
 import {url} from "../common/defaults"
 import Link from 'next/link'
 
-import header from '../particles/less/header.module.less';
-import grid from '../particles/less/grid.module.less';
-import button from '../particles/less/buttons.module.less';
-import utilities from '../particles/less/utilities.module.less';
+import header from '../particles/less/header.module.less'
+import grid from '../particles/less/grid.module.less'
+import button from '../particles/less/buttons.module.less'
+import utilities from '../particles/less/utilities.module.less'
 
 const Header: React.FunctionComponent = () => (
     <header className={grid.container}>

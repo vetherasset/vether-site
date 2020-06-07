@@ -1,9 +1,17 @@
+@import "defaults";
+
 body {
-  color: #fff;
+  color: @text;
+  font-weight: 300;
 }
 
-a, button {
-  color: #fff;
+h1, h2, h3, h4, h5, h6, ul {
+  margin: 0 0 1.3rem 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 code {
@@ -14,3 +22,4 @@ code {
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
   DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
+

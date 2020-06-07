@@ -1,12 +1,12 @@
-import * as React from "react";
+import * as React from "react"
 
 import Head from 'next/head'
 import Header from '../components/header'
-// import Footer from '../components/footer'
+import Footer from '../components/footer'
 
-import core from '../particles/less/core.module.less';
-import grid from '../particles/less/grid.module.less';
-import '../particles/less/typography.module.less';
+import core from '../particles/less/core.module.less'
+import grid from '../particles/less/grid.module.less'
+import '../particles/less/typography.module.less'
 
 const Basic: React.FunctionComponent = ({children})  => (
     <div className={core.viewport}>
@@ -22,7 +22,7 @@ const Basic: React.FunctionComponent = ({children})  => (
             {children}
         </main>
 
-        {/*<Footer/>*/}
+        <Footer/>
     </div>
 )
 
