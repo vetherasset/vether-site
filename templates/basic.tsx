@@ -34,8 +34,8 @@ const Basic: React.FunctionComponent<Props> = ({title, type, path, publishedTime
         )
     }
 
-   return(
-       <html prefix='og: http://ogp.me/ns#'>
+   return (
+       <>
            <Head>
                <meta charSet="utf-8" />
                <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width" />
@@ -47,7 +47,7 @@ const Basic: React.FunctionComponent<Props> = ({title, type, path, publishedTime
                <meta property='og:url' content={metaOgPath} />
                {metaOgArticle}
            </Head>
-           <body>
+
                <div className={core.viewport}>
                    <Header/>
 
@@ -57,8 +57,7 @@ const Basic: React.FunctionComponent<Props> = ({title, type, path, publishedTime
 
                    <Footer/>
                </div>
-           </body>
-       </html>
+       </>
    );
 
 };
