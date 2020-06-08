@@ -3,27 +3,52 @@ import * as React from "react"
 import Head from 'next/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
+import { name, url } from "../common/defaults"
 
 import core from '../particles/less/core.module.less'
 import grid from '../particles/less/grid.module.less'
 import '../particles/less/typography.module.less'
 
-const Basic: React.FunctionComponent = ({children})  => (
-    <div className={core.viewport}>
-        <Head>
-            <meta charSet="utf-8" />
-            <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width" />
-            <link rel="icon" href="../public/ico/favicon.ico" />
-        </Head>
+type Props = {
+    title: string;
+    type: string;
+    path: string;
+    publishedTime?: string;
+    author?: string;
+    tag?: string;
+}
 
-        <Header/>
+const Basic: React.FunctionComponent<Props> = (
+    {title, type, path, publishedTime,
+        author, tag, children}
+    )  => (
+        <>
+            <Head>
+                <meta charSet="utf-8" />
+                <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width" />
+                <link rel="icon" href="../public/ico/favicon.ico" />
+                <title>{name} - {title}</title>
+                <meta property='og:site_name' content={name} />
+                <meta property='og:title' content={title} />
+                <meta property='og:type' content={type} />
+                <meta property='og:url' content={path} />
+                if({type} === 'article') {
+                    <>
+                        <meta property='article:published_time' content={publishedTime} />
+                        <meta property='article:author' content={author} />
+                    </>
+                }
+            </Head>
+            <div className={core.viewport}>
+                <Header/>
 
-        <main className={grid.container}>
-            {children}
-        </main>
+                <main className={grid.container}>
+                    {children}
+                </main>
 
-        <Footer/>
-    </div>
+                <Footer/>
+            </div>
+        </>
 )
 
 export { Basic as default };

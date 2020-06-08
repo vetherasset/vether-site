@@ -1,7 +1,6 @@
 import * as React from "react"
-import Link from 'next/link'
 
-import footer from '../particles/less/footer.module.less'
+import '../particles/less/footer.module.less'
 import grid from '../particles/less/grid.module.less'
 import '../particles/less/footer.module.less'
 
@@ -12,29 +11,19 @@ const Footer: React.FunctionComponent = () => (
                 <h3>Resources</h3>
                 <ul>
                     <li>
-                        <Link href='https://vetherasset.org/whitepaper'>
-                            <a>Whitepaper</a>
-                        </Link>
+                        <a href='https://vetherasset.org/whitepaper'>Whitepaper</a>
                     </li>
                     <li>
-                        <Link href='https://github.com/vetherasset/vether-contracts'>
-                            <a>Smart Contract</a>
-                        </Link>
+                        <a href='https://github.com/vetherasset/vether-contracts'>Smart Contract</a>
                     </li>
                     <li>
-                        <Link href='https://github.com/vetherasset/vether-miner'>
-                            <a>Mining client</a>
-                        </Link>
+                        <a href='https://github.com/vetherasset/vether-miner'>Mining client</a>
                     </li>
                     <li>
-                        <Link href='https://etherscan.io/address/0x0111011001100001011011000111010101100101'>
-                            <a>Burnt Ether</a>
-                        </Link>
+                        <a href='https://etherscan.io/address/0x0111011001100001011011000111010101100101'>Burnt Ether</a>
                     </li>
                     <li>
-                        <Link href='https://github.com/vetherasset/vether-branding'>
-                            <a>Branding</a>
-                        </Link>
+                        <a href='https://github.com/vetherasset/vether-branding'>Branding</a>
                     </li>
                 </ul>
             </div>
@@ -42,24 +31,16 @@ const Footer: React.FunctionComponent = () => (
                 <h3>Exchange</h3>
                 <ul>
                     <li>
-                        <Link href='https://v1.uniswap.exchange/swap/0x31Bb711de2e457066c6281f231fb473FC5c2afd3'>
-                            <a>Uniswap</a>
-                        </Link>
+                        <a href='https://v1.uniswap.exchange/swap/0x31Bb711de2e457066c6281f231fb473FC5c2afd3'>Uniswap</a>
                     </li>
                     <li>
-                        <Link href='https://trade.resfinex.com/?pair=VETH_ETH'>
-                            <a>Resfinex</a>
-                        </Link>
+                        <a href='https://trade.resfinex.com/?pair=VETH_ETH'>Resfinex</a>
                     </li>
                     <li>
-                        <Link href='https://fatbtc.com/trading?currency=VETH%2FUSDT&freetab=2'>
-                            <a>FatBTC</a>
-                        </Link>
+                        <a href='https://fatbtc.com/trading?currency=VETH%2FUSDT&freetab=2'>FatBTC</a>
                     </li>
                     <li>
-                        <Link href='https://forkdelta.app/#!/trade/0x31bb711de2e457066c6281f231fb473fc5c2afd3-ETH'>
-                            <a>Forkdelta</a>
-                        </Link>
+                        <a href='https://forkdelta.app/#!/trade/0x31bb711de2e457066c6281f231fb473fc5c2afd3-ETH'>Forkdelta</a>
                     </li>
                 </ul>
             </div>
@@ -67,19 +48,13 @@ const Footer: React.FunctionComponent = () => (
                 <h3>Media</h3>
                 <ul>
                     <li>
-                        <Link href='https://coinmarketcap.com/currencies/vether/'>
-                            <a>CoinMarketCap</a>
-                        </Link>
+                        <a href='https://coinmarketcap.com/currencies/vether/'>CoinMarketCap</a>
                     </li>
                     <li>
-                        <Link href='https://www.coingecko.com/en/coins/vether'>
-                            <a>CoinGecko</a>
-                        </Link>
+                        <a href='https://www.coingecko.com/en/coins/vether'>CoinGecko</a>
                     </li>
                     <li>
-                        <Link href='https://etherscan.io/address/0x31bb711de2e457066c6281f231fb473fc5c2afd3'>
-                            <a>EtherScan</a>
-                        </Link>
+                        <a href='https://etherscan.io/address/0x31bb711de2e457066c6281f231fb473fc5c2afd3'>EtherScan</a>
                     </li>
                 </ul>
             </div>
@@ -87,29 +62,19 @@ const Footer: React.FunctionComponent = () => (
                 <h3>Community</h3>
                 <ul>
                     <li>
-                        <Link href='https://discord.gg/p9RhrM'>
-                            <a>Discord</a>
-                        </Link>
+                        <a href='https://discord.gg/p9RhrM'>Discord</a>
                     </li>
                     <li>
-                        <Link href='https://twitter.com/strictly_scarce'>
-                            <a>Twitter</a>
-                        </Link>
+                        <a href='https://twitter.com/strictly_scarce'>Twitter</a>
                     </li>
                     <li>
-                        <Link href='https://github.com/vetherasset'>
-                            <a>Github</a>
-                        </Link>
+                        <a href='https://github.com/vetherasset'>Github</a>
                     </li>
                     <li>
-                        <Link href='https://discord.com/invite/c5aBC7Q'>
-                            <a>Telegram</a>
-                        </Link>
+                        <a href='https://discord.com/invite/c5aBC7Q'>Telegram</a>
                     </li>
                     <li>
-                        <Link href='https://bitcointalk.org/index.php?topic=5243406'>
-                            <a>Bitcointalk.org</a>
-                        </Link>
+                        <a href='https://bitcointalk.org/index.php?topic=5243406'>Bitcointalk.org</a>
                     </li>
                 </ul>
             </div>
