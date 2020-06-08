@@ -9,31 +9,31 @@ import {title} from "../common/defaults";
 
 const Index: React.FunctionComponent = () => (
 
-    <Page title={title} type='website' path='/'>
+        <Page title={title} type='website' path='/'>
 
-        <div className={grid.container}>
+            <div className={grid.container}>
 
-            <Intro/>
+                <Intro/>
 
-            <div className={section.headline}>
-                <h1>Vether</h1>
-                <p>A strictly-scarce Ethereum-based asset</p>
-                <div>
-                    <a href='https://discord.gg/p9RhrM'>
-                        <img className={section.discord} src="svg/discord.svg" alt="Vether - A strictly-scarce Ethereum-based asset" />
-                    </a>
-                    <a href='https://github.com/vetherasset'>
-                        <img className={section.github} src="svg/github.svg" alt="Vether - A strictly-scarce Ethereum-based asset" />
-                    </a>
-                    <a href='https://t.me/vetherasset'>
-                        <img className={section.telegram} src="svg/telegram.svg" alt="Vether - A strictly-scarce Ethereum-based asset" />
-                    </a>
+                <div className={section.headline}>
+                    <h1>Vether</h1>
+                    <p>A strictly-scarce Ethereum-based asset</p>
+                    <div>
+                        <a href='https://discord.gg/p9RhrM'>
+                            <img className={section.discord} src="svg/discord.svg" alt="Vether - A strictly-scarce Ethereum-based asset" />
+                        </a>
+                        <a href='https://github.com/vetherasset'>
+                            <img className={section.github} src="svg/github.svg" alt="Vether - A strictly-scarce Ethereum-based asset" />
+                        </a>
+                        <a href='https://t.me/vetherasset'>
+                            <img className={section.telegram} src="svg/telegram.svg" alt="Vether - A strictly-scarce Ethereum-based asset" />
+                        </a>
+                    </div>
                 </div>
+
             </div>
 
-        </div>
-
-    </Page>
+        </Page>
 
 )
 

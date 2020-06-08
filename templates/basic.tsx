@@ -19,36 +19,47 @@ type Props = {
 }
 
 const Basic: React.FunctionComponent<Props> = ({title, type, path, publishedTime,
-        author, tag, children})  => (
-    <html prefix="og: http://ogp.me/ns#">
-        <Head>
-            <meta charSet="utf-8" />
-            <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width" />
-            <link rel="icon" href="../public/ico/favicon.ico" />
-            <title>{name} - {title}</title>
-            <meta property='og:site_name' content={name} />
-            <meta property='og:title' content={title} />
-            <meta property='og:type' content={type} />
-            <meta property='og:url' content={path} />
-            if({type} === 'article') {
+        author, tag, children})  => {
+
+    let metaOgArticle;
+
+    if(type === 'article') {
+        metaOgArticle = (
             <>
                 <meta property='article:published_time' content={publishedTime} />
                 <meta property='article:author' content={author} />
+                <meta property='article:tag' content={tag} />
             </>
-        }
-        </Head>
-        <body>
-            <div className={core.viewport}>
-                <Header/>
+        )
+    }
 
-                <main className={grid.container}>
-                    {children}
-                </main>
+   return(
+       <html prefix='og: http://ogp.me/ns#'>
+           <Head>
+               <meta charSet="utf-8" />
+               <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width" />
+               <link rel="icon" href='../public/ico/favicon.ico' />
+               <title>{name} - {title}</title>
+               <meta property='og:site_name' content={name} />
+               <meta property='og:title' content={title} />
+               <meta property='og:type' content={type} />
+               <meta property='og:url' content={path} />
+               {metaOgArticle}
+           </Head>
+           <body>
+               <div className={core.viewport}>
+                   <Header/>
 
-                <Footer/>
-            </div>
-        </body>
-    </html>
-)
+                   <main className={grid.container}>
+                       {children}
+                   </main>
+
+                   <Footer/>
+               </div>
+           </body>
+       </html>
+   );
+
+};
 
 export { Basic as default };
