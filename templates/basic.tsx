@@ -20,7 +20,7 @@ type Props = {
 
 const Basic: React.FunctionComponent<Props> = ({title, type, path, publishedTime,
         author, tag, children})  => (
-    <>
+    <html prefix="og: http://ogp.me/ns#">
         <Head>
             <meta charSet="utf-8" />
             <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width" />
@@ -31,22 +31,24 @@ const Basic: React.FunctionComponent<Props> = ({title, type, path, publishedTime
             <meta property='og:type' content={type} />
             <meta property='og:url' content={path} />
             if({type} === 'article') {
-                <>
-                    <meta property='article:published_time' content={publishedTime} />
-                    <meta property='article:author' content={author} />
-                </>
-            }
+            <>
+                <meta property='article:published_time' content={publishedTime} />
+                <meta property='article:author' content={author} />
+            </>
+        }
         </Head>
-        <div className={core.viewport}>
-            <Header/>
+        <body>
+            <div className={core.viewport}>
+                <Header/>
 
-            <main className={grid.container}>
-                {children}
-            </main>
+                <main className={grid.container}>
+                    {children}
+                </main>
 
-            <Footer/>
-        </div>
-    </>
+                <Footer/>
+            </div>
+        </body>
+    </html>
 )
 
 export { Basic as default };

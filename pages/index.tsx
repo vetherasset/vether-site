@@ -9,7 +9,7 @@ import {title} from "../common/defaults";
 
 const Index: React.FunctionComponent = () => (
 
-    <Page title={title} type='article' path='/'>
+    <Page title={title} type='website' path='/'>
 
         <div className={grid.container}>
 
