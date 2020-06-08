@@ -21,6 +21,7 @@ type Props = {
 const Basic: React.FunctionComponent<Props> = ({title, type, path, publishedTime,
         author, tag, children})  => {
 
+    const metaOgPath = `${url}${path}`
     let metaOgArticle;
 
     if(type === 'article') {
@@ -43,7 +44,7 @@ const Basic: React.FunctionComponent<Props> = ({title, type, path, publishedTime
                <meta property='og:site_name' content={name} />
                <meta property='og:title' content={title} />
                <meta property='og:type' content={type} />
-               <meta property='og:url' content={path} />
+               <meta property='og:url' content={metaOgPath} />
                {metaOgArticle}
            </Head>
            <body>
