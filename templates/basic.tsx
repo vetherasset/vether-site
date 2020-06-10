@@ -21,7 +21,7 @@ type Props = {
 const Basic: React.FunctionComponent<Props> = ({title, type, path, publishedTime,
         author, tag, children})  => {
 
-    const metaOgPath = `${url}${path}`
+    const metaOgPath = `${url}${path}`;
     let metaOgArticle;
 
     if(type === 'article') {
@@ -31,7 +31,7 @@ const Basic: React.FunctionComponent<Props> = ({title, type, path, publishedTime
                 <meta property='article:author' content={author} />
                 <meta property='article:tag' content={tag} />
             </>
-        )
+        );
     }
 
    return (
@@ -48,15 +48,15 @@ const Basic: React.FunctionComponent<Props> = ({title, type, path, publishedTime
                {metaOgArticle}
            </Head>
 
-               <div className={core.viewport}>
-                   <Header/>
+           <div className={core.viewport}>
+               <Header/>
 
-                   <main className={grid.container}>
-                       {children}
-                   </main>
+               <main className={grid.container}>
+                   {children}
+               </main>
 
-                   <Footer/>
-               </div>
+               <Footer/>
+           </div>
        </>
    );
 

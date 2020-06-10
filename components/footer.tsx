@@ -62,7 +62,7 @@ const Footer: React.FunctionComponent = () => (
                 <h3>Community</h3>
                 <ul>
                     <li>
-                        <a href='https://discord.gg/p9RhrM'>Discord</a>
+                        <a href='https://discord.gg/c5aBC7Q'>Discord</a>
                     </li>
                     <li>
                         <a href='https://twitter.com/strictly_scarce'>Twitter</a>

@@ -19,7 +19,7 @@ const Index: React.FunctionComponent = () => (
                     <h1>Vether</h1>
                     <p>A strictly-scarce Ethereum-based asset</p>
                     <div>
-                        <a href='https://discord.gg/p9RhrM'>
+                        <a href='https://discord.gg/c5aBC7Q'>
                             <img className={section.discord} src="svg/discord.svg" alt="Vether - A strictly-scarce Ethereum-based asset" />
                         </a>
                         <a href='https://github.com/vetherasset'>
