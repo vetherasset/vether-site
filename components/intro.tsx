@@ -1,6 +1,6 @@
 import * as React from "react";
 import videocontent from '../public/mp4/intro.mp4'
-import section from '../particles/less/sections.module.less'
+import section from '../less/sections.module.less'
 
 const Intro: React.FunctionComponent = () => (
     <div>

@@ -3,11 +3,11 @@ import * as React from "react"
 import Head from 'next/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
-import { name, url } from "../common/defaults"
+import { name, basePath } from "../common/defaults"
 
-import core from '../particles/less/core.module.less'
-import grid from '../particles/less/grid.module.less'
-import '../particles/less/typography.module.less'
+import core from '../less/core.module.less'
+import grid from '../less/grid.module.less'
+import '../less/typography.module.less'
 
 type Props = {
     title: string;
@@ -16,13 +16,27 @@ type Props = {
     publishedTime?: string;
     author?: string;
     tag?: string;
+    image?: string;
+    imageType?: string;
+    description?: string;
 }
 
 const Basic: React.FunctionComponent<Props> = ({title, type, path, publishedTime,
-        author, tag, children})  => {
+        author, tag, image, imageType, description, children})  => {
 
-    const metaOgPath = `${url}${path}`;
+    let metaOgWebsite;
     let metaOgArticle;
+    const metaOgPath = `${basePath}${path}`;
+    const metaOgImage = `${basePath}${image}`;
+
+    if(type === 'website') {
+        metaOgWebsite = (
+            <>
+                <meta property="og:image:secure_url" content={metaOgImage} />
+                <meta property="og:image:type" content={imageType} />
+            </>
+        )
+    }
 
     if(type === 'article') {
         metaOgArticle = (
@@ -30,8 +44,10 @@ const Basic: React.FunctionComponent<Props> = ({title, type, path, publishedTime
                 <meta property='article:published_time' content={publishedTime} />
                 <meta property='article:author' content={author} />
                 <meta property='article:tag' content={tag} />
+                <meta property="og:image:secure_url" content={metaOgImage} />
+                <meta property="og:image:type" content={imageType} />
             </>
-        );
+        )
     }
 
    return (
@@ -45,6 +61,9 @@ const Basic: React.FunctionComponent<Props> = ({title, type, path, publishedTime
                <meta property='og:title' content={title} />
                <meta property='og:type' content={type} />
                <meta property='og:url' content={metaOgPath} />
+               <meta property="og:locale" content="en_US" />
+               <meta property='og:description' content={description} />
+               {metaOgWebsite}
                {metaOgArticle}
            </Head>
 
@@ -58,8 +77,8 @@ const Basic: React.FunctionComponent<Props> = ({title, type, path, publishedTime
                <Footer/>
            </div>
        </>
-   );
+   )
 
-};
+}
 
 export { Basic as default };

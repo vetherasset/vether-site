@@ -1,8 +1,8 @@
 import * as React from "react"
 
-import '../particles/less/footer.module.less'
-import grid from '../particles/less/grid.module.less'
-import '../particles/less/footer.module.less'
+import '../less/footer.module.less'
+import grid from '../less/grid.module.less'
+import '../less/footer.module.less'
 
 const Footer: React.FunctionComponent = () => (
     <footer>
