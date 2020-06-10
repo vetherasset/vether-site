@@ -3,7 +3,7 @@ import * as React from "react"
 import Head from 'next/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
-import { name, basePath } from "../common/defaults"
+import { name, basePath, charset, favicon } from "../common/defaults"
 
 import core from '../less/core.module.less'
 import grid from '../less/grid.module.less'
@@ -53,9 +53,9 @@ const Basic: React.FunctionComponent<Props> = ({title, type, path, publishedTime
    return (
        <>
            <Head>
-               <meta charSet="utf-8" />
-               <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width" />
-               <link rel="icon" href='../public/ico/favicon.ico' />
+               <meta charSet={charset} />
+               <meta name='viewport' content="initial-scale=1.0, maximum-scale=1.0, width=device-width" />
+               <link rel='icon' href={favicon} />
                <title>{name} - {title}</title>
                <meta property='og:site_name' content={name} />
                <meta property='og:title' content={title} />
