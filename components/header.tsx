@@ -13,7 +13,7 @@ const Header: React.FunctionComponent = () =>  {
         <header className={grid.container}>
             <div className={`${grid.col4} ${header.brand}`} >
                 <Link href="/">
-                    <a href={basePath}>
+                    <a>
                         <img className={header.logotype} src="svg/logotype.svg" alt="Vether - A strictly-scarce Ethereum-based asset." />
                     </a>
                 </Link>
