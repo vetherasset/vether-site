@@ -1,7 +1,5 @@
 import * as React from "react"
 import Link from 'next/link'
-import {basePath} from "../common/defaults"
-
 
 import header from '../less/header.module.less'
 import grid from '../less/grid.module.less'
