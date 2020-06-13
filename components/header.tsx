@@ -22,7 +22,7 @@ const Header: React.FunctionComponent = () =>  {
                 ${grid.col4}
                 ${header.action}
             `}>
-                <a href='https://vetherasset.org/' className={button.menubar}>Open Dapp</a>
+                <a href='https://vetherasset.app/' className={button.menubar}>Open Dapp</a>
             </div>
         </header>
     )
