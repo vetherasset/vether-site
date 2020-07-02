@@ -31,7 +31,7 @@ const Footer: React.FunctionComponent = () => (
                 <h3>Exchange</h3>
                 <ul>
                     <li>
-                        <a href='https://uniswap.exchange/swap/0x01217729940055011f17befe6270e6e59b7d0337'>Uniswap</a>
+                        <a href='https://uniswap.exchange/swap/0x4ba6ddd7b89ed838fed25d208d4f644106e34279'>Uniswap</a>
                     </li>
                     <li>
                         <a href='https://trade.resfinex.com/?pair=VETH_ETH'>Resfinex</a>
@@ -48,7 +48,7 @@ const Footer: React.FunctionComponent = () => (
                         <a href='https://www.coingecko.com/en/coins/vether'>CoinGecko</a>
                     </li>
                     <li>
-                        <a href='https://etherscan.io/address/0x01217729940055011f17befe6270e6e59b7d0337'>EtherScan</a>
+                        <a href='https://etherscan.io/address/0x4ba6ddd7b89ed838fed25d208d4f644106e34279'>EtherScan</a>
                     </li>
                 </ul>
             </div>
