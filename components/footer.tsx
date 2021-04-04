@@ -11,7 +11,7 @@ const Footer: React.FunctionComponent = () => (
                 <h3>Resources</h3>
                 <ul>
                     <li>
-                        <a href='https://vetherasset.org/whitepaper'>Whitepaper</a>
+                        <a href='https://wp.vetherasset.io/'>Whitepaper</a>
                     </li>
                     <li>
                         <a href='https://github.com/vetherasset/vether-contracts'>Smart Contract</a>
