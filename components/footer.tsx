@@ -65,7 +65,7 @@ const Footer: React.FunctionComponent = () => (
                         <a href='https://github.com/vetherasset'>Github</a>
                     </li>
                     <li>
-                        <a href='https://discord.com/invite/c5aBC7Q'>Telegram</a>
+                        <a href='https://t.me/vaderprotocol'>Telegram</a>
                     </li>
                     <li>
                         <a href='https://bitcointalk.org/index.php?topic=5243406'>Bitcointalk.org</a>

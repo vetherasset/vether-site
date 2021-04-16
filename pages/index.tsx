@@ -33,7 +33,7 @@ const Index: React.FunctionComponent = () => {
                             <img className={section.github} src="svg/github.svg"
                                  alt="Vether - A strictly-scarce Ethereum-based asset"/>
                         </a>
-                        <a href='https://t.me/vetherasset'>
+                        <a href='https://t.me/vaderprotocol'>
                             <img className={section.telegram} src="svg/telegram.svg"
                                  alt="Vether - A strictly-scarce Ethereum-based asset"/>
                         </a>
